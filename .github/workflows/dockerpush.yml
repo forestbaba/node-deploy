@@ -45,6 +45,7 @@ jobs:
 
   update_ssh_ubuntu_server:
     name: Telling ubuntu server to update
+    needs: push_to_registry
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh command using password
